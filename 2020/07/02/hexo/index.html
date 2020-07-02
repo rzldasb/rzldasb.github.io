@@ -5,15 +5,17 @@
   
 
   
-  <title>Memo For hexo | 工事中</title>
+  <title>Hexo备忘录 | 工事中</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="Memo For hexo">
+  <meta name="description" content="1. 安装 安装node.js, npm, Git  sudo npm install -g hexo-cli   确认版本号  node -vnpm -vGit –version     安装hexo  sudo npm install -g hexo      2. Blog初始化 cd 空白文件夹hexo initsudo npm install     执行下述命令生成本地网页文件并开启服">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo备忘录">
 <meta property="og:url" content="http://yoursite.com/2020/07/02/hexo/index.html">
 <meta property="og:site_name" content="工事中">
+<meta property="og:description" content="1. 安装 安装node.js, npm, Git  sudo npm install -g hexo-cli   确认版本号  node -vnpm -vGit –version     安装hexo  sudo npm install -g hexo      2. Blog初始化 cd 空白文件夹hexo initsudo npm install     执行下述命令生成本地网页文件并开启服">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-02T01:25:43.000Z">
-<meta property="article:modified_time" content="2020-07-02T01:27:08.358Z">
+<meta property="article:modified_time" content="2020-07-02T01:46:52.033Z">
 <meta property="article:author" content="Jason Wu">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -79,7 +81,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Memo For hexo
+      Hexo备忘录
     </h1>
   
 
@@ -87,7 +89,56 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><ul>
+<li><p>安装node.js, npm, Git</p>
+<blockquote>
+<p>sudo npm install -g hexo-cli</p>
+</blockquote>
+</li>
+<li><p>确认版本号</p>
+<blockquote>
+<p>node -v<br>npm -v<br>Git –version  </p>
+</blockquote>
+</li>
+<li><p>安装hexo</p>
+<blockquote>
+<p>sudo npm install -g hexo  </p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-Blog初始化"><a href="#2-Blog初始化" class="headerlink" title="2. Blog初始化"></a>2. Blog初始化</h2><blockquote>
+<p>cd 空白文件夹<br>hexo init<br>sudo npm install  </p>
+</blockquote>
+<ul>
+<li>执行下述命令生成本地网页文件并开启服务器，然后通过<a href="http://localhost:4000查看本地博客。">http://localhost:4000查看本地博客。</a> <blockquote>
+<p>hexo g<br>hexo s</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="3-上传更新"><a href="#3-上传更新" class="headerlink" title="3. 上传更新"></a>3. 上传更新</h2><ul>
+<li><p>安装git deploy  </p>
+<blockquote>
+<p>npm install hexo-deployer-git –save  </p>
+</blockquote>
+</li>
+<li><p>打开_config.yml，拖到最底层,xxxxx为自己的github用户名  </p>
+<blockquote>
+<p>deploy:<br>type: git<br>repository: <a href="https://github.com/xxxxxxx/xxxxxxx.github.io.git" target="_blank" rel="noopener">https://github.com/xxxxxxx/xxxxxxx.github.io.git</a><br>branch: master  </p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>发布更新   <blockquote>
+<p>hexo g<br>hexo s  </p>
+</blockquote>
+</li>
+</ul>
+<h2 id="4-添加ssh-keys到github"><a href="#4-添加ssh-keys到github" class="headerlink" title="4. 添加ssh keys到github"></a>4. 添加ssh keys到github</h2><p>可以避免每次都需要输入用户名和密码的繁琐过程  </p>
+<blockquote>
+<p>ssh-keygen -t rsa -C “your_email@exampl”</p>
+</blockquote>
+<p>将your_email.pub中的内容复制到github中的设置-deploy keys中即可。  </p>
+
       
     </div>
     <footer class="article-footer">
@@ -146,7 +197,7 @@
       <ul>
         
           <li>
-            <a href="/2020/07/02/hexo/">Memo For hexo</a>
+            <a href="/2020/07/02/hexo/">Hexo备忘录</a>
           </li>
         
       </ul>
