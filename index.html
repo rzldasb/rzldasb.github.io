@@ -87,53 +87,36 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><ul>
-<li><p>安装node.js, npm, Git</p>
-<blockquote>
-<p>sudo npm install -g hexo-cli</p>
-</blockquote>
+<li><p>安装node.js, npm, Git<br><code>sudo npm install -g hexo-cli</code></p>
 </li>
-<li><p>确认版本号</p>
-<blockquote>
-<p>node -v<br>npm -v<br>Git –version  </p>
-</blockquote>
+<li><p>确认版本号<br><code>node -v  
+npm -v  
+Git --version</code></p>
 </li>
-<li><p>安装hexo</p>
-<blockquote>
-<p>sudo npm install -g hexo  </p>
-</blockquote>
+<li><p>安装hexo<br><code>sudo npm install -g hexo</code></p>
 </li>
 </ul>
-<h2 id="2-Blog初始化"><a href="#2-Blog初始化" class="headerlink" title="2. Blog初始化"></a>2. Blog初始化</h2><blockquote>
-<p>cd 空白文件夹<br>hexo init<br>sudo npm install  </p>
-</blockquote>
+<h2 id="2-Blog初始化"><a href="#2-Blog初始化" class="headerlink" title="2. Blog初始化"></a>2. Blog初始化</h2><p><code>cd 空白文件夹  
+hexo init  
+sudo npm install</code></p>
 <ul>
-<li>执行下述命令生成本地网页文件并开启服务器，然后通过<a href="http://localhost:4000查看本地博客。">http://localhost:4000查看本地博客。</a> <blockquote>
-<p>hexo g<br>hexo s</p>
-</blockquote>
-</li>
+<li>执行下述命令生成本地网页文件并开启服务器，然后通过<a href="http://localhost:4000查看本地博客。">http://localhost:4000查看本地博客。</a><br><code>hexo g  
+hexo s</code></li>
 </ul>
 <h2 id="3-上传更新"><a href="#3-上传更新" class="headerlink" title="3. 上传更新"></a>3. 上传更新</h2><ul>
-<li><p>安装git deploy  </p>
-<blockquote>
-<p>npm install hexo-deployer-git –save  </p>
-</blockquote>
-</li>
-<li><p>打开_config.yml，拖到最底层,xxxxx为自己的github用户名  </p>
-<blockquote>
-<p>deploy:<br>type: git<br>repository: <a href="https://github.com/xxxxxxx/xxxxxxx.github.io.git" target="_blank" rel="noopener">https://github.com/xxxxxxx/xxxxxxx.github.io.git</a><br>branch: master  </p>
-</blockquote>
-</li>
+<li>安装git deploy<br><code>npm install hexo-deployer-git --save</code></li>
 </ul>
 <ul>
-<li>发布更新   <blockquote>
-<p>hexo g<br>hexo s  </p>
-</blockquote>
-</li>
+<li>打开_config.yml，拖到最底层,xxxxx为自己的github用户名<br><code>deploy:  
+type: git   
+repository: https://github.com/xxxxxxx/xxxxxxx.github.io.git
+branch: master</code></li>
 </ul>
-<h2 id="4-添加ssh-keys到github"><a href="#4-添加ssh-keys到github" class="headerlink" title="4. 添加ssh keys到github"></a>4. 添加ssh keys到github</h2><p>可以避免每次都需要输入用户名和密码的繁琐过程  </p>
-<blockquote>
-<p>ssh-keygen -t rsa -C “your_email@exampl”</p>
-</blockquote>
+<ul>
+<li>发布更新<br><code>hexo g    
+hexo s</code></li>
+</ul>
+<h2 id="4-添加ssh-keys到github"><a href="#4-添加ssh-keys到github" class="headerlink" title="4. 添加ssh keys到github"></a>4. 添加ssh keys到github</h2><p>可以避免每次都需要输入用户名和密码的繁琐过程<br><code>ssh-keygen -t rsa -C &quot;your_email@exampl&quot;</code></p>
 <p>将your_email.pub中的内容复制到github中的设置-deploy keys中即可。  </p>
 
       
