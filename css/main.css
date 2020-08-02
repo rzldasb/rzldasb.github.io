@@ -1179,6 +1179,12 @@ img:hover {
     -moz-transform: rotateZ(-360deg);
   }
 }
+.site-author-image {
+  transition: transform 1s ease-out;
+}
+.site-author-image:hover {
+  transform: rotateZ(360deg);
+}
 .site-author-name {
   color: var(--text-color);
   font-weight: 600;
@@ -1237,7 +1243,7 @@ img:hover {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff1ddd;
+  background: #cb45cb;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
